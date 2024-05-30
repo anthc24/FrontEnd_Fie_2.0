@@ -7,30 +7,65 @@
   <title>Login</title>
 </head>
 <body>
-  <div class="wrapper">
-    <form action="#">
-      <h2>Login</h2>
-        <div class="input-field">
-        <input type="text" required>
-        <label>Usuario</label>
+
+  <h2>BEBA ARMY</h2>
+  <div class="container" id="container" #container>
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>Utiliza tu correo electrónico para registrarte</span>
+        <input type="text" placeholder="Nombre" />
+        <input type="email" placeholder="Correo" />
+        <input type="password" placeholder="Contraseña" />
+        <button>Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>Usa tu cuenta</span>
+        <input type="email" placeholder="Correo" />
+        <input type="password" placeholder="Contraseña" />
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        <button>Sign In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>¡Bienvenido de nuevo!</h1>
+          <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+          <button class="ghost" id="signIn" #signInButton>Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hola, Amigo!</h1>
+          <p>Introduce tus datos personales y comienza experiencia con nosotros.</p>
+          <button class="ghost" id="signUp" #signUpButton>Sign Up</button>
+        </div>
       </div>
-      <div class="input-field">
-        <input type="password" required>
-        <label>Contraseña</label>
-      </div>
-      <div class="forget">
-        <label for="remember">
-          <input type="checkbox" id="remember">
-          <p>Recordar</p>
-        </label>
-        <a href="#">Olvido su contraseña?</a>
-      </div>
-      <button type="submit">Log In</button>
-      <div class="register">
-        <p>¿No tienes una cuenta? <a href="#">Registrar</a></p>
-      </div>
-    </form>
+    </div>
   </div>
+
+
+<footer>
+	<p>
+		Created with Anth <i class="fa fa-heart"></i> by
+		<a target="_blank">Beba Army</a>
+		- Universidad Sideral Carrion
+		<a target="_blank"> USC </a>.
+	</p>
+</footer>
+
 
 </body>
 </html>
