@@ -27,12 +27,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { HomeComponent } from './component/home/home.component';
 import { NgOptimizedImage } from '@angular/common';
+import { IniclienteComponent } from './component/inicliente/inicliente.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     LoginIndexComponent,
-    HomeComponent
+    HomeComponent,
+    IniclienteComponent
   ],
   imports: [
     BrowserModule,
