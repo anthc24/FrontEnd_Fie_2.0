@@ -1,0 +1,49 @@
+/* home.component.css */
+/* home.component.css */
+.background {
+  background-image: url("https://i.ibb.co/7X6FYLj/Planogram-soft-edges-1.png"); /* Ruta corregida */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el contenido */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #5fe4fc;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #02242b;
+}
