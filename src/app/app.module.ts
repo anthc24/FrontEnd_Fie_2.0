@@ -28,13 +28,17 @@ import { MatSelectModule } from '@angular/material/select';
 import { HomeComponent } from './component/home/home.component';
 import { NgOptimizedImage } from '@angular/common';
 import { IniclienteComponent } from './component/inicliente/inicliente.component';
+import { ViscreditoComponent } from './component/viscredito/viscredito.component';
+import { Viscredito1Component } from './component/viscredito1/viscredito1.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     LoginIndexComponent,
     HomeComponent,
-    IniclienteComponent
+    IniclienteComponent,
+    ViscreditoComponent,
+    Viscredito1Component
   ],
   imports: [
     BrowserModule,

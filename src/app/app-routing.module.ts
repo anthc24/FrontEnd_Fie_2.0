@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
 import { IniclienteComponent } from './component/inicliente/inicliente.component';
+import { ViscreditoComponent } from './component/viscredito/viscredito.component';
+import { Viscredito1Component } from './component/viscredito1/viscredito1.component';
 
 const routes: Routes = [
 
@@ -10,6 +12,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'inicliente', component: IniclienteComponent },
+  { path: 'viscredito', component: ViscreditoComponent },
+  { path: 'viscredito1', component: Viscredito1Component },
 ];
 
 @NgModule({
