@@ -38,6 +38,8 @@ import { DocumentacionesComponent } from './component/documentaciones/documentac
 import { MisclientesComponent } from './component/misclientes/misclientes.component';
 import { InventarioComponent } from './component/inventario/inventario.component';
 import { MisfinanzasComponent } from './component/misfinanzas/misfinanzas.component';
+import { CronogramamoraComponent } from './component/cronogramamora/cronogramamora.component';
+import { CronogramapagoComponent } from './component/cronogramapago/cronogramapago.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +56,9 @@ import { MisfinanzasComponent } from './component/misfinanzas/misfinanzas.compon
     DocumentacionesComponent,
     MisclientesComponent,
     InventarioComponent,
-    MisfinanzasComponent
+    MisfinanzasComponent,
+    CronogramamoraComponent,
+    CronogramapagoComponent
   ],
   imports: [
     BrowserModule,

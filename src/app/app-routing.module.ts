@@ -13,6 +13,8 @@ import { DocumentacionesComponent } from './component/documentaciones/documentac
 import { MisclientesComponent } from './component/misclientes/misclientes.component';
 import { InventarioComponent } from './component/inventario/inventario.component';
 import { MisfinanzasComponent } from './component/misfinanzas/misfinanzas.component';
+import { CronogramamoraComponent } from './component/cronogramamora/cronogramamora.component';
+import { CronogramapagoComponent } from './component/cronogramapago/cronogramapago.component';
 
 const routes: Routes = [
 
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'misclientes', component: MisclientesComponent },
   { path: 'inventario', component: InventarioComponent },
   { path: 'misfinanzas', component: MisfinanzasComponent },
+  { path: 'cronogramamora', component: CronogramamoraComponent },
+  { path: 'cronogramapago', component: CronogramapagoComponent },
 ];
 
 @NgModule({
