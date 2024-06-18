@@ -30,6 +30,12 @@ import { NgOptimizedImage } from '@angular/common';
 import { IniclienteComponent } from './component/inicliente/inicliente.component';
 import { ViscreditoComponent } from './component/viscredito/viscredito.component';
 import { Viscredito1Component } from './component/viscredito1/viscredito1.component';
+import { Viscredito2Component } from './component/viscredito2/viscredito2.component';
+import { Agregarconsumo1Component } from './component/agregarconsumo1/agregarconsumo1.component';
+import { Agregarconsumo2Component } from './component/agregarconsumo2/agregarconsumo2.component';
+import { NuevocliienteComponent } from './component/nuevocliiente/nuevocliiente.component';
+import { DocumentacionesComponent } from './component/documentaciones/documentaciones.component';
+import { MisclientesComponent } from './component/misclientes/misclientes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +44,13 @@ import { Viscredito1Component } from './component/viscredito1/viscredito1.compon
     HomeComponent,
     IniclienteComponent,
     ViscreditoComponent,
-    Viscredito1Component
+    Viscredito1Component,
+    Viscredito2Component,
+    Agregarconsumo1Component,
+    Agregarconsumo2Component,
+    NuevocliienteComponent,
+    DocumentacionesComponent,
+    MisclientesComponent
   ],
   imports: [
     BrowserModule,
