@@ -10,6 +10,9 @@ import { Agregarconsumo1Component } from './component/agregarconsumo1/agregarcon
 import { Agregarconsumo2Component } from './component/agregarconsumo2/agregarconsumo2.component';
 import { NuevocliienteComponent } from './component/nuevocliiente/nuevocliiente.component';
 import { DocumentacionesComponent } from './component/documentaciones/documentaciones.component';
+import { MisclientesComponent } from './component/misclientes/misclientes.component';
+import { InventarioComponent } from './component/inventario/inventario.component';
+import { MisfinanzasComponent } from './component/misfinanzas/misfinanzas.component';
 
 const routes: Routes = [
 
@@ -24,6 +27,9 @@ const routes: Routes = [
   { path: 'agregarconsumo2', component: Agregarconsumo2Component },
   { path: 'nuevocliente', component: NuevocliienteComponent },
   { path: 'documentaciones', component: DocumentacionesComponent },
+  { path: 'misclientes', component: MisclientesComponent },
+  { path: 'inventario', component: InventarioComponent },
+  { path: 'misfinanzas', component: MisfinanzasComponent },
 ];
 
 @NgModule({

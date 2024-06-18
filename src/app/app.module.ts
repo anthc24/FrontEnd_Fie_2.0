@@ -36,6 +36,8 @@ import { Agregarconsumo2Component } from './component/agregarconsumo2/agregarcon
 import { NuevocliienteComponent } from './component/nuevocliiente/nuevocliiente.component';
 import { DocumentacionesComponent } from './component/documentaciones/documentaciones.component';
 import { MisclientesComponent } from './component/misclientes/misclientes.component';
+import { InventarioComponent } from './component/inventario/inventario.component';
+import { MisfinanzasComponent } from './component/misfinanzas/misfinanzas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,9 @@ import { MisclientesComponent } from './component/misclientes/misclientes.compon
     Agregarconsumo2Component,
     NuevocliienteComponent,
     DocumentacionesComponent,
-    MisclientesComponent
+    MisclientesComponent,
+    InventarioComponent,
+    MisfinanzasComponent
   ],
   imports: [
     BrowserModule,

@@ -154,13 +154,12 @@ main h2 {
   margin-right: 30px; /* Ajusta este valor según el espacio deseado */
 }
 
-h1 {  
+h1 {
   text-align: left; /* Alinea el contenido a la izquierda */
 }
 
 h2 {
-  margin-top: 10px; /* Ajusta este valor según la cantidad de espacio deseado */
-  margin-bottom: 60px;
+  margin-top: none; /* Ajusta este valor según la cantidad de espacio deseado */
 }
 
 .datoscredi {
@@ -181,49 +180,40 @@ h2 {
   border-radius: 10px; /* Bordes redondeados opcionales */
   margin-top: 20px; /* Ajusta este valor según el espaciado deseado */
   margin-bottom: 10px; /* Ajusta este valor según el espaciado deseado */
+  display: flex;
 }
 
-.header-cliente-image {
-    width: 60px; /* Establece el ancho de la imagen */
-    height: 60px; /* Mantiene la proporción de la imagen */
-;
+.header-comestibles-image {
+    width: 150px; /* o el tamaño que prefieras */
+    height: 150px;
+    margin-right: none; /* Ajusta este valor según el espacio deseado */
+    flex-wrap: wrap;
+     
+  }
+
+/* Selector que apunta solo a la 'green box' anidada dentro de otra 'green box' */
+.green-box .green-box {
+    width: 180px; /* Reducción del ancho */
+    margin: 10px auto; /* Centrado y ajuste del margen */
+    padding: 10px; /* Ajuste del padding */
+    background-color: #98FB98; /* Ejemplo de cambio de color para diferenciar */
 }
 
-.buttons .cre1 {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #0cc377;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+/* Selector para la 'white box' dentro de la 'green box' anidada */
+.white-box .white-box {
+    width: 150px; /* Reducción del ancho, asegurándose de que es menor que su contenedor */
+    margin: 5px; /* Ajuste del margen */
+    padding: 5px; /* Reducción del padding */
+    background-color:  hwb(120 92% 0%); /* Asegurando que el fondo sea blanco */
+}
 
-  .buttons .cre2 {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #f96c26;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .buttons .ver {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #3c89e6;
-    color: rgba(237, 241, 244, 0.983);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .buttons .imprimir {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #dbce1b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.leftarrow {
+    margin-top: 90px; /* Mueve el SVG hacia abajo */
+    /* Para moverlo hacia arriba usar un valor negativo, por ejemplo: */
+    /* margin-top: -20px; */
+}
+.rightarrow {
+    margin-top: 90px; /* Mueve el SVG hacia abajo */
+    /* Para moverlo hacia arriba usar un valor negativo, por ejemplo: */
+    /* margin-top: -20px; */
+}
