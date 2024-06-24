@@ -1,0 +1,129 @@
+<div class="solicitar-credito-container">
+    <h2>Solicitar Crédito</h2>
+  
+    <div class="form-group checkbox-group">
+      <label>
+        <input type="radio" name="credito" (change)="onCreditoChange($event, 'credito1')"> Crédito 1
+      </label>
+      <label>
+        <input type="radio" name="credito" (change)="onCreditoChange($event, 'credito2')"> Crédito 2
+      </label>
+    </div>
+
+    
+    <div class="form-group checkbox-group">
+      <label>
+        <input type="radio" name="credito" (change)="onCreditoChange($event, 'credito1')"> TEP
+      </label>
+      <label>
+        <input type="radio" name="credito" (change)="onCreditoChange($event, 'credito2')"> TNP
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="tienda">Seleccionar Tienda</label>
+      <select id="tienda" (change)="onTiendaChange($event)">
+        <option value="frutos_frescos"></option>
+        <option value="frutos_frescos">Frutos Frescos</option>
+        <option value="la_manzana_verde">La Manzana Verde</option>
+        <option value="carnes_more">Carnes & More</option>
+        <option value="fresh_fish">FreshFish</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="frecuencia">Frecuencia de Tasa</label>
+      <select id="frecuencia" (change)="onFrecuenciaChange($event)">
+        <option value="diario"></option>
+        <option value="diario">Diario</option>
+        <option value="mensual">Mensual</option>
+        <option value="trimestral">Trimestral</option>
+        <option value="anual">Anual</option>
+        <option value="anual">Quincenal</option>
+        <option value="anual">Cuatrimestral</option>
+        <option value="anual">Bimestral</option>
+
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="periodo">Periodo de Capitalización</label>
+      <select id="periodo" (change)="onPeriodoChange($event)">
+        <option value="mensual">Mensual</option>
+        <option value="trimestral">Trimestral</option>
+        <option value="anual">Anual</option>
+      </select>
+    </div>
+  
+   
+    <div class="form-group">
+      <label for="tasa">Numero de cuotas</label>
+      <input id="tasa" type="number" (input)="onTasaChange($event)">
+    </div>
+    
+    <div class="form-group">
+      <label for="tasa">Periodo de Gracia</label>
+      <input id="tasa" type="number" (input)="onTasaChange($event)">
+    </div>
+  
+  
+    <div class="form-group">
+      <label for="fechaInicial">Fecha Inicial</label>
+      <input id="fechaInicial" type="date" (input)="onFechaChange($event)">
+    </div>
+  
+ 
+  
+    <div *ngIf="credito === 'credito1'">
+      <div class="form-group">
+        <label for="tipoTasa">Tipo de Tasa</label>
+        <select id="tipoTasa" (change)="onTipoTasaChange($event)">
+          <option value="efectiva">Tasa Efectiva</option>
+          <option value="nominal">Tasa Nominal</option>
+        </select>
+      </div>
+  
+      <div class="form-group" *ngIf="tipoTasa === 'efectiva'">
+        <label for="tep">TEP</label>
+        <input id="tep" type="number" (input)="onTEPChange($event)">
+      </div>
+  
+      <div class="form-group" *ngIf="tipoTasa === 'nominal'">
+        <label for="tnp">TNP</label>
+        <input id="tnp" type="number" (input)="onTNPChange($event)">
+      </div>
+    </div>
+  
+    <div *ngIf="credito === 'credito2'">
+      <div class="form-group">
+        <label for="diasPlazo">Días de Plazo</label>
+        <input id="diasPlazo" type="number" (input)="onDiasPlazoChange($event)">
+      </div>
+  
+      <div class="form-group">
+        <label for="tep">TEP</label>
+        <input id="tep" type="number" (input)="onTEPChange($event)">
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="tasa">Tasa</label>
+      <input id="tasa" type="number" (input)="onTasaChange($event)">
+    </div>
+  
+    <div class="form-group">
+      <label for="monto">Monto</label>
+      <input id="monto" type="number" (input)="onMontoChange($event)">
+    </div>
+  
+    <div class="form-group">
+      <label for="fechaFinal">Fecha Final</label>
+      <input id="fechaFinal" type="date" (input)="onFechaFinalChange($event)">
+    </div>
+  
+    <div class="form-group button-group">
+      <button (click)="irAPagar()">Solicitar</button>
+      <button (click)="agregarConsumo()">Agregar Consumo</button>
+    </div>
+  </div>
+  

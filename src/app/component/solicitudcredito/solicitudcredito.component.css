@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #00695c;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .profile img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  main {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    color: #004d40;
+  }
+  
+  h2 {
+    color: #00796b;
+  }
+  
+  .accesses {
+    margin: 20px 0;
+  }
+  
+  .accesses .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .accesses .icon {
+    text-align: center;
+  }
+  
+  .accesses .icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .accesses .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .accesses .buttons button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .accesses .buttons button:hover {
+    background-color: #004d40;
+  }
+  
+  .solicitar-credito-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .solicitar-credito-container h2 {
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group select,
+  .form-group input[type="date"],
+  .form-group input[type="number"],
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .checkbox-group input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  
+  .checkbox-group1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group1 label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .checkbox-group1 input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  .cantidad-solicitar-group {
+    margin-bottom: 15px;
+  }
+  
+  .limite-credito-group {
+    margin-bottom: 15px;
+  }
+  
+  .limite-credito-group label,
+  .limite-credito-group input {
+    display: block;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-group button {
+    display: inline-block;
+    width: calc(50% - 10px);
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-group button:last-child {
+    background-color: #28a745;
+  }
+  
+  .button-group button:last-child:hover {
+    background-color: #218838;
+  }
+  

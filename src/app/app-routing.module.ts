@@ -16,13 +16,28 @@ import { InventarioComponent } from './component/inventario/inventario.component
 import { MisfinanzasComponent } from './component/misfinanzas/misfinanzas.component';
 import { CronogramamoraComponent } from './component/cronogramamora/cronogramamora.component';
 import { CronogramapagoComponent } from './component/cronogramapago/cronogramapago.component';
+import { SolicitudCreditoComponent } from './component/solicitudcredito/solicitudcredito.component';
 
 const routes: Routes = [
 
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Ruta predeterminada redirigida a Home
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'inicliente', component: IniclienteComponent },
+  { path: 'tienda', component: IniclienteComponent },
+  { path: 'viscredito', component: ViscreditoComponent },
+  { path: 'viscredito1', component: Viscredito1Component },
+  {path:'login-index',component:LoginIndexComponent},
+  /*{ path: 'viscredito2', component: Viscredito2Component },*/
+  { path: 'agregarconsumo1', component: Agregarconsumo1Component },
+  { path: 'agregarconsumo2', component: Agregarconsumo2Component },
+  /*{ path: 'nuevocliente', component: NuevocliienteComponent },*/
+  { path: 'documentaciones', component: DocumentacionesComponent },
+  { path: 'misclientes', component: MisclientesComponent },
+  { path: 'inventario', component: InventarioComponent },
+  { path: 'misfinanzas', component: MisfinanzasComponent },
+  { path: 'cronogramamora', component: CronogramamoraComponent },
+  { path: 'cronogramapago', component: CronogramapagoComponent },
+  { path: 'solicitudcredito', component:SolicitudCreditoComponent} // Ruta
 ];
 
 @NgModule({
