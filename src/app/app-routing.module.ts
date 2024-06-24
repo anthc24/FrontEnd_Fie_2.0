@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Ruta predeterminada redirigida a Home
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'inicliente', component: IniclienteComponent },
+  { path: 'tienda', component: IniclienteComponent },
   { path: 'viscredito', component: ViscreditoComponent },
   { path: 'viscredito1', component: Viscredito1Component },
   {path:'login-index',component:LoginIndexComponent},

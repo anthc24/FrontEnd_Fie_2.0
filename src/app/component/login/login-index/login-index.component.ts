@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 interface User {
@@ -29,6 +30,10 @@ export class LoginIndexComponent implements AfterViewInit {
     { email: 'user3@example.com', password: 'password3' }
   ];
 
+  constructor(
+    private router: Router,
+  ) {}
+
 
   ngAfterViewInit(): void {
     this.signUpButton.nativeElement.addEventListener('click', () => {
@@ -57,6 +62,7 @@ export class LoginIndexComponent implements AfterViewInit {
     this.signUpName.nativeElement.value = '';
     this.signUpEmail.nativeElement.value = '';
     this.signUpPassword.nativeElement.value = '';
+    
   }
 
   loginUser(): void {
@@ -65,6 +71,8 @@ export class LoginIndexComponent implements AfterViewInit {
     const user = this.users.find(user => user.email === email && user.password === password);
     if (user) {
       alert('Inicio de sesión exitoso!');
+      this.router.navigate(['/tienda'])
+      
     } else {
       alert('Correo o contraseña inválidos.');
       // Limpiar los campos del formulario de inicio de sesión
