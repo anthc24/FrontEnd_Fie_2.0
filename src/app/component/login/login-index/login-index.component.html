@@ -22,11 +22,12 @@
         <input type="text" #signUpName placeholder="Nombre" required />
         <input type="email" #signUpEmail placeholder="Correo" required />
         <input type="password" #signUpPassword placeholder="Contraseña" required />
+        <input type="rol" #signUpRol placeholder="Rol" required />
         <button type="submit">Sign Up</button>
       </form>
     </div>
     <div class="form-container sign-in-container">
-      <form (submit)="loginUser(); $event.preventDefault();">
+      <form (submit)="login(); $event.preventDefault();">
         <h1>Sign in</h1>
         <div class="social-container">
           <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -34,7 +35,7 @@
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <span>Usa tu cuenta</span>
-        <input type="email" #signInEmail placeholder="Correo" required />
+        <input type="email" #signInEmail placeholder="Usuario" required />
         <input type="password" #signInPassword placeholder="Contraseña" required />
         <a href="#">¿Olvidaste tu contraseña?</a>
         <button type="submit">Sign In</button>
