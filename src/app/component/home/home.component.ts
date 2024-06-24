@@ -1,6 +1,6 @@
 // home.component.ts
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +10,19 @@ import { ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit {
 
  
-  constructor(public route: ActivatedRoute) { }
+  constructor(
+    private router: Router,
+  ) {}
 
   ngOnInit(): void {
     // Initialization logic here
   }
+
+  redirigir_a_login(){
+    this.router.navigate(['/login'])
+
+  }
+
+
 
 }
