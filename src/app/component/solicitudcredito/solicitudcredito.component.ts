@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./solicitudcredito.component.css']
 })
 export class SolicitudCreditoComponent implements OnInit {
-[x: string]: any;
   selectedTienda: string = '';
   selectedFrecuencia: string = '';
   selectedPeriodo: string = '';
@@ -25,11 +24,7 @@ export class SolicitudCreditoComponent implements OnInit {
   limiteCredito: number = 2000;  // Este valor debe ser obtenido desde la vista del cliente
   diasPlazo: number = 0;
 
-  
- 
-  constructor(
-    private router: Router,
-  ) {}
+  constructor(private router: Router) {}
   
   ngOnInit() {
     // Aquí podrías obtener el límite de crédito desde la vista del cliente
@@ -52,13 +47,13 @@ export class SolicitudCreditoComponent implements OnInit {
   }
 
   onNumCuotasChange(event: Event) {
-    const selectElement = event.target as HTMLSelectElement;
-    this.selectedNumCuotas = parseInt(selectElement.value, 10);
+    const inputElement = event.target as HTMLInputElement;
+    this.selectedNumCuotas = parseInt(inputElement.value, 10);
   }
 
   onPeriodoGraciaChange(event: Event) {
-    const selectElement = event.target as HTMLSelectElement;
-    this.selectedPeriodoGracia = parseInt(selectElement.value, 10);
+    const inputElement = event.target as HTMLInputElement;
+    this.selectedPeriodoGracia = parseInt(inputElement.value, 10);
   }
 
   onFechaChange(event: Event) {
@@ -112,11 +107,18 @@ export class SolicitudCreditoComponent implements OnInit {
   }
 
   irAPagar() {
-  this.router.navigate(['/']);
+    if (this.credito === 'credito1' ) {
+      this.router.navigate(['/agregarconsumo1']);
+    } else {
+      this.router.navigate(['/agregarconsumo2']);
+    }
   }
 
   agregarConsumo() {
-    this.router.navigate(['/agregarConsumo1']);
+    if (this.credito === 'credito1') {
+      this.router.navigate(['/agregarconsumo1']);
+    } else {
+      this.router.navigate(['/agregarconsumo2']);
+    }
   }
-
 }

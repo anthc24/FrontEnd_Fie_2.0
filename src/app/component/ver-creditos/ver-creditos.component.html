@@ -1,0 +1,30 @@
+<!-- src/app/ver-creditos/ver-creditos.component.html -->
+<div class="container">
+    <h2>Ver Créditos</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Rol</th>
+          <th>Usuario</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cliente of clientes">
+          <td>{{ cliente.id }}</td>
+          <td>{{ cliente.rol }}</td>
+          <td>{{ cliente.user.username }}</td>
+          <td>{{ cliente.selectedProducto }}</td>
+          <td>{{ cliente.selectedCantidad }}</td>
+          <td>{{ cliente.precio }}</td>
+          <td>{{ cliente.fecha }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-secondary" (click)="navigateBack()">Atrás</button>
+  </div>
+  

@@ -1,0 +1,227 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .tabla-cronogramas-container {
+    text-align: center;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+  }
+  
+  header .logo {
+    height: 50px;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  main {
+    margin-top: 2rem;
+  }
+  
+  .datos-cliente {
+    background-color: #d4f0c6;
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .datos-cliente h3 {
+    margin-top: 0;
+  }
+  
+  .datos-cliente div {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cliente-foto {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .button-group {
+    margin-top: 1rem;
+  }
+  
+  .button-group button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .navbar {
+    background-image: url('https://i.ibb.co/9Ggn4K3/pexels-photomix-company-868110-1.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    padding: 20px 0; /* Incrementa el padding para hacer el nav más grande */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo para contenido centrado */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+  
+  nav ul li {
+    margin: 0 70px; /* Incrementar el margen entre los elementos del nav */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em; /* Incrementar el tamaño de la fuente */
+  }
+  
+  nav ul li.profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li.profile img {
+    border-radius: 50%;
+    width: 40px; /* Incrementar el tamaño de la imagen */
+    height: 40px; /* Incrementar el tamaño de la imagen */
+    margin-right: 10px;
+  }
+  
+  /* Main Content Styles */
+  main h1 {
+    margin-top: 20px;
+    color: #4CAF50;
+  }
+  
+  main h2 {
+    color: #333;
+  }
+  
+  .accesses {
+    margin-top: 30px;
+  }
+  
+  .accesses h3 {
+    margin-bottom: 20px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .icon {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .icons {
+      flex-direction: column;
+    }
+  
+    .icon img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul {
+      text-align: center;
+    }
+  
+    .icon img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .buttons button {
+      width: 100%;
+    }
+  }
+
+

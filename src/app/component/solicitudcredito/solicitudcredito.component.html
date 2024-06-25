@@ -13,10 +13,10 @@
     
     <div class="form-group checkbox-group">
       <label>
-        <input type="radio" name="credito" (change)="onCreditoChange($event, 'credito1')"> TEP
+        <input type="radio" name="tasa" (change)="onCreditoChange($event, 'credito1')"> TEP
       </label>
       <label>
-        <input type="radio" name="credito" (change)="onCreditoChange($event, 'credito2')"> TNP
+        <input type="radio" name="tasa" (change)="onCreditoChange($event, 'credito2')"> TNP
       </label>
     </div>
 
@@ -120,6 +120,7 @@
       <label for="fechaFinal">Fecha Final</label>
       <input id="fechaFinal" type="date" (input)="onFechaFinalChange($event)">
     </div>
+
   
     <div class="form-group button-group">
       <button (click)="irAPagar()">Solicitar</button>

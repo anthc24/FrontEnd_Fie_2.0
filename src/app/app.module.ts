@@ -31,7 +31,7 @@ import { IniclienteComponent } from './component/inicliente/inicliente.component
 import { ViscreditoComponent } from './component/viscredito/viscredito.component';
 import { Viscredito1Component } from './component/viscredito1/viscredito1.component';
 /*import { Viscredito2Component } from './component/viscredito2/viscredito2.component';*/
-import { Agregarconsumo1Component } from './component/agregarconsumo1/agregarconsumo1.component';
+import { AgregarConsumo1Component } from './component/agregarconsumo1/agregarconsumo1.component';
 import { Agregarconsumo2Component } from './component/agregarconsumo2/agregarconsumo2.component';
 /*import { NuevocliienteComponent } from './component/nuevocliiente/nuevocliiente.component';*/
 import { DocumentacionesComponent } from './component/documentaciones/documentaciones.component';
@@ -40,6 +40,11 @@ import { InventarioComponent } from './component/inventario/inventario.component
 import { MisfinanzasComponent } from './component/misfinanzas/misfinanzas.component';
 import { CronogramamoraComponent } from './component/cronogramamora/cronogramamora.component';
 import { CronogramapagoComponent } from './component/cronogramapago/cronogramapago.component';
+import { VistaClienteinicioComponent } from './component/vista-clienteinicio/vista-clienteinicio.component';
+import { TablaCronogramasComponent } from './component/tabla-cronogramas/tabla-cronogramas.component';
+import { RegistroclienteComponent } from './component/registrocliente/registrocliente.component';
+import { ClienteComponent } from './cliente/cliente.component';
+import { VerCreditosComponent } from './component/ver-creditos/ver-creditos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +55,7 @@ import { CronogramapagoComponent } from './component/cronogramapago/cronogramapa
     ViscreditoComponent,
     Viscredito1Component,
     /*/Viscredito2Component,*/
-    Agregarconsumo1Component,
+    AgregarConsumo1Component,
     Agregarconsumo2Component,
    /* NuevocliienteComponent,*/
     DocumentacionesComponent,
@@ -58,7 +63,12 @@ import { CronogramapagoComponent } from './component/cronogramapago/cronogramapa
     InventarioComponent,
     MisfinanzasComponent,
     CronogramamoraComponent,
-    CronogramapagoComponent
+    CronogramapagoComponent,
+    VistaClienteinicioComponent,
+    TablaCronogramasComponent,
+    RegistroclienteComponent,
+    ClienteComponent,
+    VerCreditosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,94 @@
+<!<!-- src/app/tabla-cronogramas/tabla-cronogramas.component.html -->
+<div class="tabla-cronogramas-container">
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a routerLink="/inicliente">Home</a></li>
+        <li><a href="#">Mi Perfil</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li class="profile">
+          <img src="https://i.ibb.co/zSyGrwb/human.png" alt="Antonella Orbelo">
+          <span>Fernanda Amarilis</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Tabla de Cronogramas</h2>
+
+    <div class="datos-cliente">
+      <h3>Datos Cliente</h3>
+      <div>
+        <strong>Nombre Cliente:</strong> Maria Ruiz
+      </div>
+      <div>
+        <strong>Monto:</strong> 100
+      </div>
+      <div>
+        <strong>Fecha de Inicio:</strong> 22 de Abril
+      </div>
+      <div>
+        <strong>Fecha Final:</strong> 22 de Mayo
+      </div>
+      <div>
+        <strong>Monto a pagar:</strong> S/ 88.71
+      </div>
+      <div>
+        <strong>TEM:</strong> 5%
+      </div>
+      <img src="assets/cliente.jpg" alt="Cliente Foto" class="cliente-foto">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Productos</th>
+            <th>Precio</th>
+            <th>Fecha de Inicio</th>
+            <th>Fecha de Fin</th>
+            <th>Monto a Pagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pan</td>
+            <td>10</td>
+            <td>22-04-24</td>
+            <td>22-05-24</td>
+            <td>10S</td>
+          </tr>
+          <tr>
+            <td>Jamon</td>
+            <td>15</td>
+            <td>23-04-24</td>
+            <td>23-05-24</td>
+            <td>15.724606</td>
+          </tr>
+          <tr>
+            <td>Pastel</td>
+            <td>60</td>
+            <td>25-04-24</td>
+            <td>25-05-24</td>
+            <td>62.4678076</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>85</td>
+            <td></td>
+            <td></td>
+            <td>88.71806432</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-group">
+        <button (click)="anadirMora()">Añadir Mora</button>
+        <button (click)="pagar()">Pagar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>All copyright Reserved to Esmyrotek</p>
+  </footer>
+</div>
