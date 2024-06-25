@@ -71,7 +71,7 @@ export class LoginIndexComponent implements AfterViewInit {
     const user = this.users.find(user => user.email === email && user.password === password);
     if (user) {
       alert('Inicio de sesión exitoso!');
-      this.router.navigate(['/tienda'])
+      this.router.navigate(['/vista-clienteinicio'])
       
     } else {
       alert('Correo o contraseña inválidos.');
